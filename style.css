@@ -1,42 +1,92 @@
-body{
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('clear.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
     justify-content: center;
-    background-color: rgb(132, 180, 235);
-    background-image: url("https://media.istockphoto.com/id/1007768414/photo/blue-sky-with-bright-sun-and-clouds.jpg?s=612x612&w=0&k=20&c=MGd2-v42lNF7Ie6TtsYoKnohdCfOPFSPQt5XOz4uOy4=");
-}
-
-h1{
     align-items: center;
-    margin: 20px;
-    margin-left: 600px;
-    margin-top: 180px;
-    
 }
 
-h2{
-    justify-content: center;
-    color: black;
-    align-items: centers;
+.container {
+    background: rgba(245, 242, 244, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    position: relative;
 }
 
-
-
-
-div{
-    color: rgb(15, 14, 14);
-    margin: 20px;
-    margin-left: 630px;
-
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 69, 0, 0.3));
+    z-index: -1;
+    border-radius: 10px;
 }
 
-section{
-    color: rgb(12, 12, 12);
-    margin-left: 610px;
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
-footer{
-    color: rgb(12, 12, 12);
-    margin-left: 606px;
+.search {
+    margin-bottom: 20px;
 }
+
+input[type="text"] {
+    padding: 10px;
+    width: 220px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-result {
+    display: none;
+    margin-top: 20px;
+}
+
+.weather-result h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.weather-result p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.weather-result img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
 
 
 
